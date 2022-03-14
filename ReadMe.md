@@ -6,4 +6,4 @@
 
 <h2> Following code is under development, evolve to the better. </h2>
                     Follow the link below.
---> <a href="https://portfolio-2-under-construction.netlify.app/" target="_blank">  <--
+--> <a href="https://portfolio-2-under-construction.netlify.app/" target="_blank"> Portfolio-2 </a> <--
