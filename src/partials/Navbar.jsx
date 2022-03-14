@@ -23,4 +23,9 @@ function Navbar() {
   );
 }
 
+/* Använder oss av Link och path från "react-router-dom".
+ * Link länkar var på hemsidan man navigeras och därefter skickar användaren dit.
+ * Path "/about" skickar oss till en specifik sida där det gör det enklare för användaren att se var vi är på hemsidan.
+ */
+
 export default Navbar;

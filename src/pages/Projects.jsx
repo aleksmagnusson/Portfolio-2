@@ -8,6 +8,11 @@ import AnimatedPage from "../partials/AnimatedPage";
 function Projects() {
   const projects = useRecoilValue(projectsState);
 
+  /*
+   * ProjectsBlock visar data som hämtas ut från key men också den lista med objekt som visas.
+   * X antal värden visas och syns här i projects.jsx
+   */
+
   return (
     <AnimatedPage>
       <Heading>Mina projekt</Heading>

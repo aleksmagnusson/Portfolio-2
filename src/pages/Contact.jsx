@@ -1,3 +1,5 @@
+// Importerar komponenter och biblotek till "Contact".
+
 import React from "react";
 import {
   Container,
@@ -8,6 +10,11 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import AnimatedPage from "../partials/AnimatedPage";
+
+/*
+ * Kontaktsidan får sitt egna fält med exempeltext och andra attribut.
+ * Länk till @gmail länkas också.
+ */
 
 function Contact() {
   return (

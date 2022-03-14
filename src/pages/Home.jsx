@@ -20,6 +20,8 @@ import AnimatedPage from "../partials/AnimatedPage";
 function Home() {
   const projects = useRecoilValue(projectsState);
 
+  // På "Hem" använder vi oss av Recoil, useRecoilValue hämtar data från projectsState. Visar alla värden som är definerade.
+
   return (
     <AnimatedPage>
       <Flex minHeight="60vh" alignItems="center">

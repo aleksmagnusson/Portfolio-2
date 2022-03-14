@@ -1,7 +1,14 @@
 import { atom } from "recoil";
 
-// En unik key som är för vår projectsState.
-// Ändra "id:" så du får ett specifikt objekt/projekt.
+/* En unik key som är för vår projectsState.
+ * Ändra "id:" så du får ett specifikt objekt/projekt.
+ * en "atom" är en del av ett "State". Atomer kan läsas och kan skrivas från andra komponenter.
+ * Komponenter som läser värdet av atomen hämtar in specifik data.
+ *
+ * const textState = atom({
+ * key: 'textState', // unique ID (with respect to other atoms/selectors)
+ * default: '', // default value (aka initial value)
+ */
 
 /* Produkterna som ska laddas in lägger jag in i en eget objekt med.
  Kolla bland annat på Selectors. Där står det hur du laddar in saker från lista.

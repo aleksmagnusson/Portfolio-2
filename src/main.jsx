@@ -18,3 +18,6 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+// Alla paket och den data man hämtar in i form av ramverk eller biblotek omsluter man sin "App" med.
+// Här använder vi "BrowserRouter", "ChakraProvider" och "RecoilRoot" för att lägga in de bibilotek i vår "App".

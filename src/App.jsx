@@ -28,5 +28,6 @@ function App() {
     </div>
   );
 }
-
+// Route och path navigerar så när användaren klickar så hittar den lättare var på hemsidan man är och i sökfältet med.
+// Routes hämtas från "react-router-dom" och wrappar in mellan "Routes".
 export default App;
