@@ -6,13 +6,13 @@ import { atom } from "recoil";
  * Komponenter som läser värdet av atomen hämtar in specifik data.
  *
  * const textState = atom({
- * key: 'textState', // unique ID (with respect to other atoms/selectors)
+ * key: 'textState', // unique id (with respect to other atoms/selectors)
  * default: '', // default value (aka initial value)
  */
 
 /* Produkterna som ska laddas in lägger jag in i en eget objekt med.
  Kolla bland annat på Selectors. Där står det hur du laddar in saker från lista.
-Id 4 är ett exempel på hur du skapar ett objekt ID.*/
+id 4 är ett exempel på hur du skapar ett objekt id.*/
 
 export const projectsState = atom({
   key: "projectsState",
@@ -20,21 +20,21 @@ export const projectsState = atom({
     {
       id: 1,
       title: "Kattstallet",
-      description: "En kort beskrivning",
+      description: "A short decription, lorem ipsum...",
       image:
         "https://scontent-hel3-1.xx.fbcdn.net/v/t1.6435-9/138082992_3722170957830884_2180409321891704731_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=3gCszeGNasQAX-FhYK6&_nc_ht=scontent-hel3-1.xx&oh=00_AT9DNbgtcYXGWpNqLfGrDw8hPhSTwY3OX6ouSDcBq38HvQ&oe=6252FAD5",
     },
     {
       id: 2,
       title: "Donalds Nuggets",
-      description: "En kort beskrivning",
+      description: "A short decription, lorem ipsum...",
       image:
         "https://www.mcdonalds.com/is/image/content/dam/nordic/nfl/nutrition/Items/Hero/mcd-sv-9chickenmcnuggets.jpg?$Product_Desktop$",
     },
     {
       id: 3,
       title: "Günters Korvmoj",
-      description: "En kort beskrivning",
+      description: "A short decription, lorem ipsum...",
       image:
         "https://upload.wikimedia.org/wikipedia/commons/6/62/G%C3%BCnters_korv%2C_Karlbergsv%C3%A4gen.JPG",
     },

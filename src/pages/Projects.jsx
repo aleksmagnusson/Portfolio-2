@@ -15,7 +15,7 @@ function Projects() {
 
   return (
     <AnimatedPage>
-      <Heading>Mina projekt</Heading>
+      <Heading>My Projects</Heading>
       <ProjectsBlock projects={projects} />
     </AnimatedPage>
   );

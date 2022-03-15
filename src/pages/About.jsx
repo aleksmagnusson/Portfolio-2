@@ -4,12 +4,34 @@
  * Denna sidan är för närvarande tom.
  */
 
-import { Container } from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Container,
+  Heading,
+  Text,
+  Button,
+  Stack,
+  Flex,
+} from "@chakra-ui/react";
+
+import { useRecoilValue } from "recoil";
 import AnimatedPage from "../partials/AnimatedPage";
 
 function About() {
-  return <AnimatedPage></AnimatedPage>;
+  return (
+    <AnimatedPage>
+      <Flex minHeight="50vh" alignItems="center">
+        <Stack alignItems="flex-start">
+          <Heading>About</Heading>
+          <Text>
+            Hej! I'm a photographer and currently a Frontend/App Developer at
+            Changemaker Educations based in Stockholm, Sweden.
+          </Text>
+        </Stack>
+      </Flex>
+    </AnimatedPage>
+  );
 }
 
 export default About;

@@ -11,10 +11,16 @@ function Navbar() {
       justifyContent="space-between"
       alignItems="center"
     >
-      <Image src="https://via.placeholder.com/150x50" />
+      <Image
+        src="https://www.brainville.com/UserContent/CompanyLogotypes/22841/MailLogotype/MailLogotype.png"
+        width="50px"
+        height="50px"
+        to="/"
+      />
       <Stack as="nav" direction="row">
         <Link to="/">Home</Link>
         <Link to="/projects">Projects</Link>
+        <Link to="/products">Products</Link>
         <Link to="/about">About</Link>
         <Link to="/showreel">Showreel</Link>
         <Link to="/contact">Contact</Link>

@@ -28,15 +28,20 @@ function Home() {
         <Stack alignItems="flex-start">
           <Heading>Aleks Magnusson</Heading>
           <Image src="https://images.pexels.com/users/avatars/1256099/aleks-magnusson-681.jpeg?auto=compress&fit=crop&h=100&w=100"></Image>
-          <Heading>Frontend Student</Heading>
+          <Heading>Frontend App Developer Student</Heading>
           <Text>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
-            sunt blanditiis hic mollitia quisquam rerum porro a ullam quos,
-            recusandae similique, quam minima esse, reprehenderit provident
-            molestiae sapiente? Magni, a.
+
+            Hello, I'm Aleks Magnusson.
+            A frontend app developer student at ChangeMaker Education.
+
+            I am currently developing this website to be something bigger.
+            This whole site is what I have learned during codealongs and self-studies.
+
+            Be free to navigate and look on this website.
+            "Happy Hacking!"
           </Text>
           <Button as={Link} to="/projects">
-            Kolla in mina projekt
+            Take a look on some of my projects!
           </Button>
         </Stack>
       </Flex>

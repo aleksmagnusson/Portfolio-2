@@ -15,7 +15,7 @@ import {
   SimpleGrid,
 } from "@chakra-ui/react";
 
-/* 
+/*
  * Funktion som opererar på projects.jsx
  * Sätter in värdena för de olika komponenterna från Chakra.
  * Använder sig av project.map() som hanterar nummer.
@@ -26,7 +26,7 @@ import {
 function Projects({ projects }) {
   return (
     <Box minHeight="60vh">
-      <Heading>Projekt jag är stolt över</Heading>
+      <Heading>Projects I'm proud of!</Heading>
       <Stack spacing="32px">
         {projects.map((project) => (
           <SimpleGrid key={project.id} columns={2}>
@@ -35,7 +35,7 @@ function Projects({ projects }) {
               <Heading>{project.title}</Heading>
               <Text>{project.description}</Text>
               <Button as={Link} to={`/projects/${project.id}`}>
-                Läs mer
+                Read More
               </Button>
             </Box>
           </SimpleGrid>
