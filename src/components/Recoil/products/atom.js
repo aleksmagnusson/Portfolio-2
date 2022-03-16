@@ -7,7 +7,6 @@ import { atom } from "recoil";
  *
  * Länk till filerna: https://gist.githubusercontent.com/sawariz0r/9c5774332ae86071dd0750d877c899ba/raw/2c05a7d73bb0f18b3b0731af1634d856189022fd/fakedata.json
  *
- *
  */
 
 export const productsState = atom({

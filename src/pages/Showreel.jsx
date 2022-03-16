@@ -1,16 +1,16 @@
 import React from "react";
-import { Container, Heading } from "@chakra-ui/react";
-import AnimatedPage from "../partials/AnimatedPage";
+import { Container, Heading, Text } from "@chakra-ui/react";
 
 function Showreel() {
-  return <div>Showreel</div>;
+  return (
+    <Container>
+      <Heading>Showreel</Heading>
+      <Text>See our latest showreel here below:</Text>
+    </Container>
+  );
 }
 
 // Showreel är för närvarande tom men ska hämta och lägga in en exempelvideo som spelas upp.
 // Kan vara video för en viss produkt med.
-
-function Showreel() {
-  return <AnimatedPage></AnimatedPage>;
-}
 
 export default Showreel;

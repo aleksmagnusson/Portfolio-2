@@ -14,10 +14,10 @@ function Projects() {
    */
 
   return (
-    <AnimatedPage>
+    <Container>
       <Heading>My Projects</Heading>
       <ProjectsBlock projects={projects} />
-    </AnimatedPage>
+    </Container>
   );
 }
 

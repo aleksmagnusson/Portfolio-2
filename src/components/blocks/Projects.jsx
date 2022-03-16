@@ -26,14 +26,14 @@ import {
 function Projects({ projects }) {
   return (
     <Box minHeight="60vh">
-      <Heading>Projects I'm proud of!</Heading>
+      <Heading fontSize="large">Projects I'm proud of!</Heading>
       <Stack spacing="32px">
         {projects.map((project) => (
           <SimpleGrid key={project.id} columns={2}>
             <Image src={project.image} />
             <Box>
               <Heading>{project.title}</Heading>
-              <Text>{project.description}</Text>
+              <Text textAlign="left">{project.description}</Text>
               <Button as={Link} to={`/projects/${project.id}`}>
                 Read More
               </Button>

@@ -9,6 +9,8 @@ import SingleProject from "./pages/SingleProject";
 import SingleProduct from "./pages/SingleProduct";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Showreel from "./pages/Showreel";
+import Shop from "./pages/Shop";
 
 import { AnimatePresence } from "framer-motion";
 // Exit before enter, tar bort den innan man öppnar en ny.
@@ -21,11 +23,13 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/:projectId" element={<SingleProject />} />
+          <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:productId" element={<SingleProduct />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:projectId" element={<SingleProject />} />
+          <Route path="/Showreel" element={<Showreel />} />
+          <Route path="/Shop" element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>

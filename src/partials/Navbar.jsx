@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <Box
-      bg="red"
-      padding="4"
-      display="flex"
+      bg="wheat"
+      padding="3"
+      display="flex-box"
       justifyContent="space-between"
       alignItems="center"
     >
@@ -19,10 +19,11 @@ function Navbar() {
       />
       <Stack as="nav" direction="row">
         <Link to="/">Home</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/products">Products</Link>
         <Link to="/about">About</Link>
+        <Link to="/projects">Projects</Link>
         <Link to="/showreel">Showreel</Link>
+        <Link to="/products">Products</Link>
+        <Link to="/shop">Shop</Link>
         <Link to="/contact">Contact</Link>
       </Stack>
     </Box>

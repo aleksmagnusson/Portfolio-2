@@ -1,8 +1,9 @@
 import React from "react";
 import ProductsBlock from "./../components/blocks/Products";
-import { Container, Heading } from "@chakra-ui/react";
-import { productsState } from "../stores/products/atomProducts";
+import { Container, Heading, Flex, Stack } from "@chakra-ui/react";
+import { productsState } from "../components/Recoil/products/atom";
 import { useRecoilValue } from "recoil";
+import AnimatedPage from "../partials/AnimatedPage";
 
 function Products() {
   const products = useRecoilValue(productsState);
@@ -13,10 +14,16 @@ function Products() {
    */
 
   return (
-    <div>
-      <Heading>Sample Products X</Heading>
-      <ProductsBlock products={products} />
-    </div>
+    <Container>
+      <Flex minHeight="60vh" alignItems="center">
+        <Stack alignItems="flex-start">
+          <Heading display="flex" align-items="center">
+            Our products
+          </Heading>
+          <ProductsBlock products={products} />
+        </Stack>
+      </Flex>
+    </Container>
   );
 }
 

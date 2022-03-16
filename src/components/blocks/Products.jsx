@@ -11,23 +11,34 @@ import {
 } from "@chakra-ui/react";
 
 function Products({ products }) {
+  console.log({ products });
   return (
     <Box minHeight="65vh">
-      <Heading>Product Page</Heading>
-      <Stack spacing="18px">
+      <br />
+      <Stack spacing="40px">
         {products.map((product) => (
-          <SimpleGrid key={product.id} columns={5}>
-            <Image src={product.image} />
+          <SimpleGrid key={product.id} columns={2}>
+            <Image
+              width="55%"
+              marginLeft="auto"
+              marginRight="auto"
+              src={product.image}
+            />
             <Box>
-              <Heading>{product.title}</Heading>
-              <Text>{product.description}</Text>
-              <Text>{product.price}</Text>
-              <Text>{product.category}</Text>
-              <Text>
-                {product.rating} | {product.count}
+              <Heading fontSize="larger">{product.title}</Heading>
+              <Text fontStyle="italic">{product.description}</Text>
+              <Text fontWeight="bold">{product.price} $</Text>
+              <Text fontWeight="medium">{product.category}</Text>
+              <Text fontWeight="bold">
+                {" "}
+                Rating: {product.rating.rate} of {product.rating.count} ratings.
               </Text>
+              <br />
               <Button as={Link} to={`/products/${product.id}`}>
                 See More
+              </Button>
+              <Button as={Link} to={`/shop/${product.id}`}>
+                Add product
               </Button>
             </Box>
           </SimpleGrid>

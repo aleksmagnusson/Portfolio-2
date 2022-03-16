@@ -20,17 +20,17 @@ import AnimatedPage from "../partials/AnimatedPage";
 
 function About() {
   return (
-    <AnimatedPage>
+    <Container>
       <Flex minHeight="50vh" alignItems="center">
         <Stack alignItems="flex-start">
           <Heading>About</Heading>
-          <Text>
+          <Text alignContent="center" width="40vh">
             Hej! I'm a photographer and currently a Frontend/App Developer at
             Changemaker Educations based in Stockholm, Sweden.
           </Text>
         </Stack>
       </Flex>
-    </AnimatedPage>
+    </Container>
   );
 }
 

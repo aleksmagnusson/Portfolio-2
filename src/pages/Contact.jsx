@@ -18,23 +18,23 @@ import AnimatedPage from "../partials/AnimatedPage";
 
 function Contact() {
   return (
-    <AnimatedPage>
+    <Container>
       <Flex minHeight="50vh" alignItems="center">
         <Stack alignItems="flex-start">
           <Heading>Get in touch with me!</Heading>
-          <Text>
+          <Text alignContent="center" width="40vh">
             Whether you have a great idea, story, concept or money to spend (on
             a great idea) get in touch with me! Together we create new
             possibilities! I am available for local projects as well as
-            potential employment opportunities. Click on the @e-mail buttpm to
+            potential employment opportunities. Click on the @e-mail buttom to
             send me a message.
           </Text>
           <Button as="a" href="mailto:aleks.magnusson.com">
-            aleks.magnusson@gmail.com
+            Send me a email
           </Button>
         </Stack>
       </Flex>
-    </AnimatedPage>
+    </Container>
   );
 }
 
