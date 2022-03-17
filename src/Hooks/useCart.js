@@ -1,7 +1,7 @@
-import { shopState } from "../components/Recoil/shop/atom";
+import { cartState } from "../components/Recoil/cart/atom";
 import { useRecoilState } from "recoil";
 
-export default function useShop(product) {
+export default function useCart(product) {
   // Använder mig av shopItems/setShopItems där all information på produkten/erna finns.
   const [shopItems, setShopItems] = useRecoilState(shopState);
 
@@ -15,7 +15,7 @@ export default function useShop(product) {
       setShopItems.map(
         shopItems.map((product) =>
           product.id === specificProduct.id
-            ? { ...inShop, car: inShop.car + 1 }
+            ? { ...inCart, car: inCart.car + 1 }
             : product
         )
       );

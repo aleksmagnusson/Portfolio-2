@@ -23,7 +23,8 @@ function Navbar() {
         <Link to="/projects">Projects</Link>
         <Link to="/showreel">Showreel</Link>
         <Link to="/products">Products</Link>
-        <Link to="/shop">Shop</Link>
+        <Link to="/Cart">Cart</Link>
+        <Link to="/signUp">Sign Up</Link>
         <Link to="/contact">Contact</Link>
       </Stack>
     </Box>

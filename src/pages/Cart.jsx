@@ -2,10 +2,10 @@ import react from "react";
 import { Heading, Box, Text, Button, Container } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { useRecoilValue } from "recoil";
-// Behöver en 'import' hook med "useShop"...
+// Behöver en 'import' hook med "useCart"...
 
-function Shop() {
-  const { shop } = useShop();
+function Cart() {
+  const { cart } = useCart();
   const { totalPrice, totalItems } = useRecoilValue(getCartTotal);
 
   return (
@@ -15,8 +15,8 @@ function Shop() {
       <Button marginRight="25">Empty shoppingcart</Button>
       <Text> You have {amount.products.id} in your shoppingcart.</Text>
 
-      {shop.map((item) => (
-        <ShopItem key={item.product.id} data={item} />
+      {cart.map((item) => (
+        <CartItem key={item.product.id} data={item} />
       ))}
 
       <Box> Your items: {totalItems} </Box>
@@ -26,4 +26,4 @@ function Shop() {
   );
 }
 
-export default Shop;
+export default Cart;

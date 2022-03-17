@@ -1,19 +1,19 @@
 import { selector } from "recoil";
-import { shopState } from "./atom";
+import { car, cartState } from "./atom";
 
 // Följer instruktionerna från: https://recoiljs.org/docs/basic-tutorial/selectors
 
-export const getShopTotal = selector({
-  key: "getShopTotal",
+export const cartTotal = selector({
+  key: "cartTotal",
   get: ({ get }) => {
     // skapar kundvagn
-    const shop = get(shopState);
+    const cart = get(cartState);
 
     // Alla produkter i shopping list
-    const totalItems = shop.reduce((acc, cur) => acc + cur.amount, 0);
+    const totalItems = cart.reduce((acc, cur) => acc + cur.amount, 0);
 
     // Uppdatering av totalpris
-    const totalPrice = shop.reduce(
+    const totalPrice = cart.reduce(
       (acc, cur) => acc + cur.product.price * cur.amount,
       0
     );

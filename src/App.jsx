@@ -10,7 +10,8 @@ import SingleProduct from "./pages/SingleProduct";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Showreel from "./pages/Showreel";
-import Shop from "./pages/Shop";
+import signUp from "./components/signUp/signUp";
+import Cart from "./pages/Cart";
 
 import { AnimatePresence } from "framer-motion";
 // Exit before enter, tar bort den innan man öppnar en ny.
@@ -29,7 +30,8 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:projectId" element={<SingleProject />} />
           <Route path="/Showreel" element={<Showreel />} />
-          <Route path="/Shop" element={<Shop />} />
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/signUp" element={<signUp />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>

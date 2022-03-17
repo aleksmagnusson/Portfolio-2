@@ -37,7 +37,7 @@ function Products({ products }) {
               <Button as={Link} to={`/products/${product.id}`}>
                 See More
               </Button>
-              <Button as={Link} to={`/shop/${product.id}`}>
+              <Button as={Link} to={`/cart/${product.id}`}>
                 Add product
               </Button>
             </Box>

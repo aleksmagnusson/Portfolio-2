@@ -1,10 +1,10 @@
 import { atom } from "recoil";
 
-// Hämtar in produkt till "shopState", det tillstånd som varukorgen har.
+// Hämtar in produkt till "cartState", det tillstånd som varukorgen har.
 // Hämtar ett objekt från hela produktlistan i "./components/recoil/products/atom.js"
 
-export const shopState = atom({
-  key: "shopState",
+export const cartState = atom({
+  key: "cartState",
   default: [
     {
       id: 1,
